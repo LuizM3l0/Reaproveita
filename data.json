@@ -1,0 +1,110 @@
+[
+  {
+    "id": "arroz",
+    "topicTitle": "Reaproveitamento de Arroz",
+    "articles": [
+      {
+        "articleId": "arroz-de-forno",
+        "title": "Arroz de Forno Cremoso com Sobras",
+        "tags": ["arroz", "sobras", "reaproveitamento", "forno", "queijo", "cremoso"],
+        "paragraphs": [
+          "Uma das formas mais clássicas e deliciosas de reaproveitar o arroz cozido é transformá-lo em um cremoso arroz de forno.",
+          "Misture o arroz com ingredientes que você já tem na geladeira: queijo, presunto, milho, ervilha, requeijão e molho de tomate. Coloque em um refratário, cubra com queijo parmesão ralado e leve ao forno para gratinar. É uma refeição completa e que agrada a todos."
+        ],
+        "link": "#/arroz/arroz-de-forno"
+      },
+      {
+        "articleId": "bolinho-de-arroz",
+        "title": "Bolinhos de Arroz Crocantes",
+        "tags": ["arroz", "sobras", "reaproveitamento", "bolinho", "frito", "lanche"],
+        "paragraphs": [
+          "Transforme o arroz de ontem em um petisco irresistível. Para fazer bolinhos de arroz, misture o arroz cozido com ovos, queijo ralado, cheiro-verde picado e um pouco de farinha de trigo para dar liga.",
+          "Faça pequenas bolinhas com a massa e frite em óleo quente até dourarem. Ficam crocantes por fora e macios por dentro, perfeitos para um lanche da tarde ou como entrada."
+        ],
+        "link": "#/arroz/bolinho-de-arroz"
+      },
+      {
+        "articleId": "arroz-chop-suey",
+        "title": "Arroz Chop Suey Caseiro",
+        "tags": ["arroz", "sobras", "reaproveitamento", "refogado", "legumes", "oriental"],
+        "paragraphs": [
+          "Para uma refeição rápida e nutritiva, refogue o arroz cozido com legumes picados (cenoura, pimentão, brócolis), ovos mexidos e um pouco de shoyu.",
+          "Você pode adicionar também cubos de frango ou carne que sobraram de outra refeição. É uma versão caseira e versátil do clássico prato oriental, pronta em minutos."
+        ],
+        "link": "#/arroz/arroz-chop-suey"
+      }
+    ]
+  },
+  {
+    "id": "frango",
+    "topicTitle": "Reaproveitamento de Frango",
+    "articles": [
+      {
+        "articleId": "salpicao-de-frango",
+        "title": "Salpicão Prático com Sobras de Frango",
+        "tags": ["frango", "assado", "sobras", "reaproveitamento", "salpicão", "salada"],
+        "paragraphs": [
+          "O frango assado desfiado é a base perfeita para um salpicão delicioso e refrescante. É uma ótima pedida para uma refeição leve ou para rechear sanduíches.",
+          "Misture o frango desfiado com maionese, cenoura ralada, milho, uvas passas (se gostar) e batata palha por cima para dar crocância. Sirva frio."
+        ],
+        "link": "#/frango/salpicao-de-frango"
+      },
+      {
+        "articleId": "torta-de-frango",
+        "title": "Torta de Liquidificador com Recheio de Frango",
+        "tags": ["frango", "assado", "sobras", "reaproveitamento", "torta", "lanche"],
+        "paragraphs": [
+          "Use o frango desfiado para fazer um recheio saboroso para uma torta de liquidificador. Refogue o frango com tomate, cebola e seus temperos favoritos.",
+          "Prepare uma massa simples no liquidificador (ovos, leite, óleo e farinha), coloque metade em uma forma, espalhe o recheio de frango e cubra com o resto da massa. Asse até dourar e sirva."
+        ],
+        "link": "#/frango/torta-de-frango"
+      },
+      {
+        "articleId": "caldo-de-frango",
+        "title": "Caldo de Galinha Caseiro e Nutritivo",
+        "tags": ["frango", "assado", "sobras", "reaproveitamento", "caldo", "sopa", "ossos"],
+        "paragraphs": [
+          "Não jogue fora os ossos e a carcaça do frango assado! Eles são a base para um caldo de galinha caseiro rico em sabor e nutrientes.",
+          "Coloque os ossos em uma panela grande com água, adicione legumes como cenoura, salsão e cebola, e deixe cozinhar em fogo baixo por algumas horas. Coe o caldo e use como base para sopas, risotos ou para cozinhar outros pratos."
+        ],
+        "link": "#/frango/caldo-de-frango"
+      }
+    ]
+  },
+  {
+    "id": "temperos",
+    "topicTitle": "Conservação e Uso de Temperos Frescos",
+    "articles": [
+      {
+        "articleId": "congelamento-de-temperos",
+        "title": "Como Congelar Pimentão, Tomate e Cebola",
+        "tags": ["temperos", "pimentão", "tomate", "cebola", "conservação", "congelamento"],
+        "paragraphs": [
+          "Para evitar o desperdício e ter sempre temperos à mão, o congelamento é a melhor solução. Pique pimentão, tomate e cebola em cubos ou rodelas.",
+          "Guarde-os em potes ou sacos plásticos próprios para congelador, separadamente ou já misturados. Assim, você pode pegar apenas a quantidade necessária para usar em refogados, molhos e assados, sem precisar descongelar tudo."
+        ],
+        "link": "#/temperos/congelamento-de-temperos"
+      },
+      {
+        "articleId": "pasta-de-tempero",
+        "title": "Pasta de Tempero Caseira",
+        "tags": ["temperos", "alho", "cebola", "conservação", "pasta", "praticidade"],
+        "paragraphs": [
+          "Crie uma pasta de tempero caseira para facilitar o dia a dia na cozinha. Bata no liquidificador ou processador alho, cebola, cheiro-verde, um pouco de sal e azeite até formar uma pasta homogênea.",
+          "Guarde em um pote de vidro bem fechado na geladeira. Essa pasta dura semanas e é perfeita para temperar arroz, feijão, carnes e refogados de forma rápida e saborosa."
+        ],
+        "link": "#/temperos/pasta-de-tempero"
+      },
+      {
+        "articleId": "azeite-aromatizado",
+        "title": "Azeite Aromatizado com Ervas",
+        "tags": ["temperos", "ervas", "alecrim", "tomilho", "conservação", "azeite"],
+        "paragraphs": [
+          "Sobraram ervas frescas como alecrim, tomilho ou manjericão? Faça um azeite aromatizado! Lave e seque bem as ervas e coloque-as dentro de uma garrafa com azeite de oliva extravirgem.",
+          "Deixe descansar por alguns dias para o azeite absorver o sabor. Use para temperar saladas, finalizar pratos ou para cozinhar, adicionando um toque especial às suas receitas."
+        ],
+        "link": "#/temperos/azeite-aromatizado"
+      }
+    ]
+  }
+]

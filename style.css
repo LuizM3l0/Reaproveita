@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* --- Variáveis CSS (Root) --- */
+:root {
+    --cor-principal-verde: #2E7D32; /* Para o texto principal */
+    --cor-detalhe-verde: #66BB6A;   /* Para as folhas/símbolos e títulos de artigo */
+    --cor-subtexto-verde: #43A047; /* Para o slogan e placeholders */
+    --cor-destaque-amarelo: #FFD54F; /* Para o detalhe do talher e hover de botões */
+    --cor-destaque-amarelo-escuro: #d8b441; /* Variação para melhor contraste no hover */
+    --texto-principal: #202124; /* Cor de texto principal (cinza escuro) */
+    --cor-fundo: #f9f9f9; /* Cor de fundo (cinza claro) */
+    --cor-fundo-elemento: #FFFFFF; /* Cor de fundo para cards, header, etc. */
+    --cor-borda: #dfe1e5;
+}
+
+/* --- Estilos Gerais --- */
+* {
+    /* Define box-sizing para todos os elementos */
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-fundo);
+    color: var(--texto-principal);
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1; /* Garante que o container ocupe todo o espaço disponível, se estiver sendo usado como wrapper */
+}
+
+/* --- Cabeçalho (Header) --- */
+header {
+    background: var(--cor-fundo-elemento);
+    padding: 15px 30px; /* Estilo consolidado */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid var(--cor-borda);
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 1.5rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    width: 60px;
+    height: auto;
+}
+
+.logo-container h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--cor-principal-verde);
+}
+
+.slogan {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--cor-subtexto-verde);
+    font-weight: 400;
+}
+
+/* --- Barra de Busca --- */
+.search-container {
+    display: flex;
+    max-width: 450px; 
+    flex-grow: 1;
+}
+
+#caixa-busca {
+    flex-grow: 1;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-family: inherit;
+    border: 1px solid var(--cor-borda);
+    border-radius: 2rem 0 0 2rem;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+#caixa-busca:focus {
+    box-shadow: 0 0 0 3px rgba(67, 160, 71, 0.3);
+    border-color: var(--cor-subtexto-verde);
+}
+
+#caixa-busca::placeholder {
+    color: #9aa0a6;
+    font-weight: 400;
+}
+
+#botao-busca {
+    display: flex; /* Para centralizar conteúdo interno, como texto e ícone (se houver) */
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0 2rem 2rem 0;
+    border: 1px solid var(--cor-borda);
+    border-left: none;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--texto-principal);
+    transition: background-color 0.2s ease;
+}
+
+#botao-busca:hover {
+    background-color: #f0f1f2;
+    border-color: #ccc;
+}
+
+#botao-busca:active {
+    background-color: #e8e9ea;
+}
+
+/* --- Navegação Principal (.main-nav) --- */
+.main-nav {
+    background-color: #2e8b57; /* SeaGreen */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+    list-style-type: none;
+    margin: 0 auto; /* Centraliza a lista na página */
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os links dentro do menu */
+    align-items: center;
+}
+
+.main-nav li {
+    margin: 0 20px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #3cb371; /* MediumSeaGreen */
+}
+
+/* --- Conteúdo Principal (Main & Article) --- */
+main {
+    flex: 1; 
+    width: 100%;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+article {
+    background: var(--cor-fundo-elemento);
+    border: 1px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-principal-verde);
+    margin-bottom: 0.75rem;
+}
+
+article p {
+    line-height: 1.7;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+article .tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+article .tag {
+    background-color: #e8f5e9;
+    color: var(--cor-principal-verde);
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* --- Rodapé (Footer) --- */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--cor-fundo-elemento);
+    color: #70757a;
+    padding: 1.5rem;
+    border-top: 1px solid var(--cor-borda);
+    font-size: 0.9rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem; 
+}
+
+.footer-links a {
+    color: #70757a; /* Cor padrão para o rodapé */
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: var(--cor-principal-verde);
+}
+
+/* --- Media Queries para Responsividade --- */
+
+/* Ajusta o padding do header para telas médias */
+@media (max-width: 768px) {
+    header {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .slogan {
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 1.5rem auto;
+    }
+
+    article h2 {
+        font-size: 1.3rem;
+    }
+
+    article p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Em telas pequenas (smartphones), voltamos a empilhar o header para economizar espaço */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .logo-container {
+        text-align: center;
+    }
+
+    /* A busca ocupa a largura total, mas o input e botão permanecem em linha (row) */
+    .search-container {
+        width: 100%;
+        max-width: none;
+    }
+    
+    /* Oculta o texto "Buscar" e mantém apenas o ícone */
+    #botao-busca span {
+        display: none;
+    }
+    
+    /* Aumenta o padding do botão para ser um alvo de toque maior, mantendo o ícone centralizado */
+    #botao-busca {
+        padding: 0.75rem; 
+        width: auto;
+    }
+    
+    .footer-links {
+        /* Empilha os links do rodapé em telas pequenas */
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+}
